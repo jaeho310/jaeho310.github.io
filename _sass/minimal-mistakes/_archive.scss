@@ -46,9 +46,15 @@
 .my__subtitle {
   margin: 1.414em 0 0.5em;
   padding-bottom: 0.5em;
-  font-size: $type-size-3;
+  font-size: 40px;
   color: $muted-text-color;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 3px solid $border-color;
+}
+
+.my__contents {
+  font-size: 17px;
+  color: black;
+  line-height: 27px;
 }
 
 .archive__item-title {
