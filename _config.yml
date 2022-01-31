@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "최재호"
 description              : "An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -103,14 +103,14 @@ analytics:
 # Site Author
 author:
   name             : "최재호(jaeho choi)"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/jaeho7.jpg"
   bio              : "백엔드/데브옵스 개발자"
   location         : "경기도 성남시"
-  email            :
+  email            : "chlwogh1993@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "chlwogh1993@gmail.com"
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: "chlwogh1993@gmail.com"
     - label: "Blog"
       icon: "fas fa-fw fa-link"
       url: "https://frozenpond.tistory.com"

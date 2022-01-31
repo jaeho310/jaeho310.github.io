@@ -3,7 +3,7 @@ layout: archive
 ---
 
 
-<h3 class="my__subtitle">Introduce</h3>
+<h3 class="my__title">👨‍💼 Introduce</h3>
 <div class="my__contents">
   객체지향을 좋아하며 더 나은 sw를 만들기 위해 끊임없이 고민하는 개발자 최재호 입니다.<br><br>
 주로 java spring, golang echo, python flask를 사용한 백엔드 애플리케이션을 개발해왔으며, <br>
@@ -12,46 +12,139 @@ vue를 사용한 웹 프론트엔드, wpf를 사용한 데스탑앱 클라이언
 
 확장하기 좋은, 변경에 유연한, 유지보수 하기 좋은 sw를 만드는데 관심이 많으며 공부한 내용은 개인 블로그에 기록하고 있습니다.
 </div>
-<h3 class="my__subtitle">Career & Project</h3>
-<div class="my__sub1">
+<h3 class="my__title">📜 Career & Project</h3>
+<div class="my__contents">
+
+<div class="my__background">
+  2021.04 ~ 모비젠 플랫폼개발팀/팀원
+</div>
+
+<div class="my__contents">
+  회사소개: 모비젠은 데이터 기반의 기업 비즈니스 서비스와 솔루션을 제공하는 b2b 빅데이터 기업입니다.
+  주 고객은 현대자동차, 시청, 통신사 등으로 ETL(하둡, 스파크, 하이브, 에어플로우, 우지, 카프카)을 통한 데이터 적재(차량 데이터, 시 구성원의 카드결제 데이터, 백신데이터, 이동통신 관련데이터 등) 및 자체 DSL과 웹 프론트엔드 시각화 툴을 제공하여 빅데이터 기반의 BI 솔루션을 제공하는 기업입니다.
+</div>
+<br>
+  <hr>
+  <h4>🧪 쿠버네티스 오퍼레이터 개발 / (2021년 04월 ~ 2021년 07월)</h4>
+  <ul class="my__list">
+    </li>🔑 상세설명 </li>
+    <ul>
+      <li>Spark, Hadoop 등 까다로운 설치와 설정이 필요한 빅데이터 클러스터 구축 및 운영 자동화</li>
+      <li>cr, crd, operator를 활용하여 쿠버네티스 custom resource와 etcd 제어</li>
+    </ul>
+    </li>🔧 사용기술 </li>
+    <ul>
+      <li>Golang, operator-sdk, Kubernetes, docker</li>
+      <li>관련 내용 (https://frozenpond.tistory.com/146)</li>
+    </ul>
+  </ul>
+   
+<hr>
+<h4>🧪 클러스터 모니터링 시스템 개발 / (2021년 08월 ~ 2021년 11월)</h4>
+<ul class="my__list">
+  </li>🔑 상세설명 </li>
+  <ul>
+    <li>쿠버네티스 네임스페이스의 pod의 리소스 사용량(cpu 사용량, memory사용량, 네트워크 사용량 등) 모니터링</li>
+    <li>쿠버네티스 변경사항의 히스토리를 적재</li>
+    <li>쿠버네티스 팟의 리소스가 지정한 기준을 초과하면 알람을 발생시켜 팟과 클러스터의 현황 체크</li>
+    <li>Golang echo 프레임워크를 사용한 백엔드 아키텍쳐 구성</li>
+    <li>프론트엔드 개발을 통한 시각화</li>
+  </ul>
+  🔧 사용기술
+  <ul>
+  <li>Prometheus, grafana, cadvisor sentry, vue, vuetify, vuex, Java, spring boot, golang, echo framework, redis, mariadb</li>
+  <li>관련 내용 (https://frozenpond.tistory.com/113)</li>
+  </ul>
+</ul>
+
+
+<hr>
+<h4>🧪 프록시 서버 개발 / (2021년 11월 ~)</h4>
+<ul class="my__list">
+  <li>🔑 상세설명</li>
+  <ul>
+    <li>캐시된 요청에 대해서는 본서버에 요청을 보내지 않도록 캐싱 기능 제공</li>
+    <li>캐시 이전 여러 개의 동일한 요청이 들어온경우, 하나의 요청만 본서버로 보내고 나머지 요청을 블락시켜 본서버로의 요청 갯수 조절</li>
+    <li>캐시된 데이터의 유효성 체크 후, 변경된 데이터는 캐시에서 삭제하여 정확도 관리</li>
+    <li>캐시히트/미스율 캐시 히스토리 등의 통계 시각화</li>
+  </ul>
+  <li>🔧 사용기술</li>
+  <ul>
+    <li>Golang, echo framework, redis, vue, mariadb, postgresql, hdfs, minio</li>
+    <li>관련 내용 (https://frozenpond.tistory.com/166)</li>
+    </ul>
+</ul>
+
+
+<br>
+<hr style="height:1px;border:none;color:#333;background-color:#333;">
+<br>
+
+<div class="my__background">
   2019.07 ~ 2020.09 와이아이케이 SW그룹/팀원
 </div>
+
 <div class="my__contents">
   회사소개: 와이아이케이는 반도체 테스트 장비를 제공하는 기업이며 <br>
   삼성전자, SK하이닉스의 1차 협력사로 웨이퍼, ssd등 반도체 제품의 테스트장비를 개발하는 기업입니다.
 </div>
-<br><br>
-<div class="my__contents">
-  [프로젝트]
+<br>
+<hr>
+<h4>🧪 SK 하이닉스향 데스크탑 애플리케이션 개발 (2019년 07월 ~ 2020년 09월) </h4>
+<ul class="my__list">
+  <li>🔑 상세설명</li>
+    <ul>
+      <li> 비동기 멀티스레딩 환경에서의 TCP소켓 라이브러리를 활용한 데스크탑 애플리케이션 개발</li>
+      <li> 생산라인의 장비, 보드들의 현황을 TCP, statefull 연결을 통해 실시간 모니터링</li>
+    </ul>
+  <li>🔧 사용기술</li>
   <ul>
-    <li>sk 하이닉스향 데스크탑 애플리케이션 개발</li>
-    <li>1</li>
-    <li>1</li>
+    <li>C#, WPF, mariadb, shell</li>
   </ul>
+</ul>
+
+
+
 </div>
-<h3 class="my__subtitle">Skill</h3>
+<h3 class="my__title">📚 Skill</h3>
+<h2>Back-End</h2>
+<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white">
+<img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
+<img src="https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white">
+<img src="https://img.shields.io/badge/echo-0185FF?style=for-the-badge&logo=go&logoColor=white">
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
+<img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white"> 
+<img src="https://img.shields.io/badge/mysql-362D59?style=for-the-badge&logo=mysql&logoColor=white"> 
+<img src="https://img.shields.io/badge/redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"> 
+<h2> devops </h2>
+<img src="https://img.shields.io/badge/jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"> 
+<img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> 
+<img src="https://img.shields.io/badge/kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"> 
+<img src="https://img.shields.io/badge/prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white"> 
+<img src="https://img.shields.io/badge/grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white"> 
+<img src="https://img.shields.io/badge/sentry-362D59?style=for-the-badge&logo=sentry&logoColor=white"> 
+<h2>Front-End / Client</h2>
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+<img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
+<img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white"> 
+<img src="https://img.shields.io/badge/vuetify-1867C0?style=for-the-badge&logo=vuetify&logoColor=white"> 
+<img src="https://img.shields.io/badge/csharp-239120?style=for-the-badge&logo=csharp&logoColor=white"> 
 
-<P>test</P>
-
-<h3 class="my__subtitle">Goals</h3>
+<h3 class="my__title"> 🎯 Goals</h3>
 
 <div class="my__contents">
-  확장해 나가고 싶습니다. <br>
+  <h4>✅ 확장하는걸 좋아합니다</h4>
   백엔드 개발과 데브옵스 문화에 관심이 많으며 기존의 스킬셋을 바탕으로 스스로를 확장해 나가는 것을 좋아합니다.
   데브옵스 툴과 프로세스를 이해하여 개발뿐 아니라, 배포 운영관련 이슈를 함께 해결할 수 있는 사람이 되고 싶습니다.
   <br>
-  <br>
-  함께를 지향합니다. <br>
+  <h4>✅ 함께를 지향합니다</h4>
   함께 성장해 나가는걸 좋아하며, 더 나아가 함께 일하고 싶은 개발자가 되고싶습니다
   개발실력, 업무능력뿐 아니라 소프트한 인적 스킬과 커뮤니케이션 역량을 갖춰,
   함께 일하고 싶은 개발자가 되고 싶습니다
   <br>
-  <br>
-  이해하는 개발자가 되고싶습니다. <br>
+  <h4>✅ 이해하는 개발자가 되고 싶습니다</h4>
   다양한 플랫폼과 툴이 어떻게 상호 연계해 작동할수 있는지 이해하고
   개발의 이해뿐 아니라, 회사의 비즈니스를 이해하고, 접목시켜 더 나은 아키텍쳐를 만드는 개발자가 되고 싶습니다.
-
-
 </div>
 <!-- {{ content }} -->
 
