@@ -5,7 +5,7 @@ layout: archive
 
 <h3 class="my__title">👨‍💼 Introduce</h3>
 <div class="my__contents">
-  객체지향을 좋아하며 더 나은 sw를 만들기 위해 끊임없이 고민하는 개발자 최재호 입니다.<br><br>
+  더 나은 sw를 만들기 위해 끊임없이 고민하는 개발자 최재호 입니다.<br><br>
 주로 java spring, golang echo, python flask를 사용한 백엔드 애플리케이션을 개발해왔으며, <br>
 vue를 사용한 웹 프론트엔드, wpf를 사용한 데스탑앱 클라이언트 개발을 한 경험이 있습니다.<br><br>
 데브옵스관련으로는 kubernetes, docker, cicd(jenkins, groovy), kubernetes operator, prometheus, grafana, sentry) 등의 솔루션을 사용한 경험이 있습니다.<br><br>
@@ -19,22 +19,46 @@ vue를 사용한 웹 프론트엔드, wpf를 사용한 데스탑앱 클라이언
   2022.03 ~ 카카오스타일 sre팀/팀원
 </div>
 
+
+
 <div class="my__contents">
   회사소개: 지그재그, 패션바이 카카오, 포스티, 나우나우 등 여러 패션관련 서비스를 제공하는 기업입니다.
 </div>
 <br>
   <hr>
-  <h4>🧪 쿠버네티스 오퍼레이터 개발 / (2021년 04월 ~ 2021년 07월)</h4>
+  <h4>🧪 로그관제 시스템(EFK) 구축 / (2022년 05월 ~ 2022년 09월)</h4>
   <ul class="my__list">
     </li>🔑 상세설명 </li>
     <ul>
-      <li>Spark, Hadoop 등 까다로운 설치와 설정이 필요한 빅데이터 클러스터 구축 및 운영 자동화</li>
-      <li>cr, crd, operator를 활용하여 쿠버네티스 custom resource와 etcd 제어</li>
+      <li> MAU 300만의 대용량 로그 관제 시스템 구축</li>
+      <li> 기존 시스템을 개선하여 70퍼센트의 비용절감 </li>
+      <li> 대용량 데이터 파이프라인을 구축하여 로그 유실문제 해결</li>
+      <li> s3, athena, 파티셔닝 배치를 구축하여 로그 장기보관 시스템 구축</li>
     </ul>
     </li>🔧 사용기술 </li>
     <ul>
-      <li>Golang, operator-sdk, Kubernetes, docker</li>
-      <li><a href="https://frozenpond.tistory.com/146">관련 내용</a>(https://frozenpond.tistory.com/146)</li>
+      <li>eact, next, node, golang, github action, graphql, helm, argocd, client-go, k8s-api, cr, crd, eks, route53, go proxy, api gateway, slack api</li>
+      <li><a href="https://frozenpond.tistory.com/226">관련 내용(go-proxy)</a>(https://frozenpond.tistory.com/226)</li>
+    </ul>
+  </ul>
+
+  <hr>
+  <h4>🧪 msa dev 시스템 구축 및 빌드 배포 시스템 / (2022년 05월 ~ 2022년 09월)</h4>
+  <ul class="my__list">
+    </li>🔑 상세설명 </li>
+    <ul>
+      <li>많은 인원이 하나의 스테이징 환경을 사용함에 따라 여러 문제점이 발생, 이를 개선하기 위한 프로젝트</li>
+      <li>프로젝트 or 팀 or 개인별 dev 제공</li>
+      <li>dev 환경에서 원하는 마이크로서비스와 브랜치를 선택 ci,cd 기능 제공</li>
+      <li>proxy pod을 구축, dev에 올라간 서비스라면 srv record를 기반으로한 dev 서버로 by pass</li>
+      <li>dev가 사용 않는 마이크로서비스라면 스테이징 서버로 by pass</li>
+      <li>야간에는 사용하지 않는 환경의 replicaset을 0으로 변경하여 비용 최소화</li>
+    </ul>
+    </li>🔧 사용기술 </li>
+    <ul>
+      <li>EKS, fluent bit, kinesis firehose, elasticsearch, kibana, cloudwatch, lambda, s3, athena, golang, terraform</li>
+      <li><a href="https://frozenpond.tistory.com/146">관련 내용(EFK)</a>(https://frozenpond.tistory.com/146)</li>
+      <li><a href="https://frozenpond.tistory.com/category/elastic%20search">관련 내용(elasticsearch)</a>(https://frozenpond.tistory.com/146)</li>
     </ul>
   </ul>
 
@@ -53,7 +77,7 @@ vue를 사용한 웹 프론트엔드, wpf를 사용한 데스탑앱 클라이언
 <br>
 
 <hr>
-<h4>🧪 프록시 서버 개발 / (2021년 11월 ~)</h4>
+<h4>🧪 프록시 서버 개발 / (2021년 11월 ~ 2022년 3월)</h4>
 <ul class="my__list">
   <li>🔑 상세설명</li>
   <ul>
