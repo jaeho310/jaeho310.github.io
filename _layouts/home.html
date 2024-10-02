@@ -8,7 +8,7 @@ layout: archive
   더 나은 sw를 만들기 위해 끊임없이 고민하는 개발자 최재호 입니다.<br><br>
 주로 java, golang, typescript, python을 사용한 백엔드 애플리케이션을 개발해왔으며, <br>
 vue, react를 사용한 웹 프론트엔드, wpf를 사용한 데스탑앱 클라이언트 개발을 한 경험이 있습니다.<br><br>
-또한 클라우드(aws), iac(terraform), k8s 등 인프라 및 devops 도구에 익숙합니다.<br><br>
+또한 sre팀 개발파트에서 근무한 경력이 있어 클라우드(aws), iac(terraform), k8s 등 인프라 및 devops 도구에 익숙합니다.<br><br>
 
 
 확장하기 좋은, 변경에 유연한, 유지보수 하기 좋은 sw를 만드는데 관심이 많으며 공부한 내용은 개인 블로그에 기록하고 있습니다.
@@ -23,24 +23,39 @@ vue, react를 사용한 웹 프론트엔드, wpf를 사용한 데스탑앱 클�
 
 <div class="my__contents">
   회사소개: 지그재그, 패션바이 카카오, 포스티, 나우나우 등 패션관련 서비스를 제공하는 기업입니다. <br>
-  담당업무: 공통 라이브러리 개발 및 discovery관련 서비스 개발 인하우스 시스템 개발을 진행했으며 sre팀의 온콜업무를 함께 수행했습니다. <br>
-  그외 진행 프로젝트는 아래와 같습니다.
+  담당업무: ci,cd 툴을 개발하였고, 로그 관제 시스템 구축 및 finops 프로젝트를 진행했으며 <br>
+  프로젝트 상세 설명은 아래와 같습니다.
 </div>
 <br>
 
   <hr>
-  <h4>🧪 CMDB 개발</h4>
+  <h4>🧪 scaleops 시스템 개발 </h4>
   <ul class="my__list">
     </li>🔑 상세설명 </li>
     <ul>
-      <li>100% 퍼블릭 클라우드를 사용하는 기업으로 비용관리를 위해 cmdb를 개발 </li>
-      <li>aws config를 기반으로 aws 리소스를 태그기반으로 rdb에 저장 및 관리</li>
-      <li>그룹웨어를 기반으로 트리구조의 팀별 비용 상세 내역확인을 위한 대시보드 구축 </li>
-      <li>일, 주, 월간 비용통계를 통한 BI 및 비용 최적화</li>
+      <li>서비스별 모니터링 제공 및 장애발생시 원인 분석 및 원하는 엔드포인트를 scaling하는 기능 제공</li>
+      <li>새벽시간 사용량이 적은 서비스들의 pod 갯수를 최소화하여 비용 절감</li>
+      <li>cpu, mem, pod등 자원의 적절한 수치를 recommend 해주는 기능 개발 </li>
+      <li>분기 반기 연간 프로모션 별 scaling 정책 제공</li>
+      <li>scaling, warm up시에도 합리적인 latency와 안정성을 제공하기 위한 평가 기능 제공</li>
     </ul>
     </li>🔧 사용기술 </li>
     <ul>
-      <li>typescript, golang, aws, aws config, aws-tagging-api</li>
+      <li>typescript(react), golang, gorm, kubecost</li>
+    </ul>
+  </ul>
+
+  <hr>
+  <h4>🧪 CMDB</h4>
+  <ul class="my__list">
+    </li>🔑 상세설명 </li>
+    <ul>
+      <li>팀별, 서비스별 aws 비용 확인 시스템 개발</li>
+      <li>dau, gmv, request count, aws cost를 통한 BI 및 비용 최적화</li>
+    </ul>
+    </li>🔧 사용기술 </li>
+    <ul>
+      <li>typescript(react), golang, aws, aws config, aws-tagging-api, slack bolt</li>
     </ul>
   </ul>
 
@@ -50,8 +65,7 @@ vue, react를 사용한 웹 프론트엔드, wpf를 사용한 데스탑앱 클�
     </li>🔑 상세설명 </li>
     <ul>
       <li>선착순 이벤트 진행시 스파이크성 트래픽으로 인해 서드파티 툴을 통한 scale-out에는 한계가 발생하여 이를 보안하기 위한 프로젝트 </li>
-      <li>crm 앱푸쉬 및 이벤트 스케쥴러를 기반으로 예상트래픽을 산정하여 이벤트 직전 sacle-out</li>
-      <li>그외 스케쥴러에 등록되지 않은 이벤트에도 전반적인 마이크로서비스들을 scaling 할수 있는 내부 서비스 개발 </li>
+      <li>crm 앱푸쉬 및 이벤트 스케쥴러를 기반으로 예상트래픽을 산정하여 이벤트 직전 스파이크성 트래픽을 버틸 수 있는 자원 확보</li>
     </ul>
     </li>🔧 사용기술 </li>
     <ul>
@@ -131,7 +145,7 @@ vue, react를 사용한 웹 프론트엔드, wpf를 사용한 데스탑앱 클�
     </ul>
 </ul>
 
-   
+
 <hr>
 <h4>🧪 클러스터 모니터링 시스템 개발</h4>
 <ul class="my__list">
@@ -206,29 +220,29 @@ vue, react를 사용한 웹 프론트엔드, wpf를 사용한 데스탑앱 클�
 <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
 <img src="https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white">
 <img src="https://img.shields.io/badge/echo-0185FF?style=for-the-badge&logo=go&logoColor=white">
-<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
-<img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white"> 
-<img src="https://img.shields.io/badge/mysql-362D59?style=for-the-badge&logo=mysql&logoColor=white"> 
-<img src="https://img.shields.io/badge/redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"> 
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white">
+<img src="https://img.shields.io/badge/mysql-362D59?style=for-the-badge&logo=mysql&logoColor=white">
+<img src="https://img.shields.io/badge/redis-DC382D?style=for-the-badge&logo=redis&logoColor=white">
 <br>
 <br>
 <br>
 <div class="my__skill">DevOps</div>
-<img src="https://img.shields.io/badge/jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"> 
-<img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> 
-<img src="https://img.shields.io/badge/kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"> 
-<img src="https://img.shields.io/badge/prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white"> 
-<img src="https://img.shields.io/badge/grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white"> 
-<img src="https://img.shields.io/badge/sentry-362D59?style=for-the-badge&logo=sentry&logoColor=white"> 
+<img src="https://img.shields.io/badge/jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white">
+<img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
+<img src="https://img.shields.io/badge/kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white">
+<img src="https://img.shields.io/badge/prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white">
+<img src="https://img.shields.io/badge/grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white">
+<img src="https://img.shields.io/badge/sentry-362D59?style=for-the-badge&logo=sentry&logoColor=white">
 <br>
 <br>
 <br>
 <div class="my__skill">Front-End / Client</div>
 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
-<img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white"> 
-<img src="https://img.shields.io/badge/vuetify-1867C0?style=for-the-badge&logo=vuetify&logoColor=white"> 
-<img src="https://img.shields.io/badge/csharp-239120?style=for-the-badge&logo=csharp&logoColor=white"> 
+<img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white">
+<img src="https://img.shields.io/badge/vuetify-1867C0?style=for-the-badge&logo=vuetify&logoColor=white">
+<img src="https://img.shields.io/badge/csharp-239120?style=for-the-badge&logo=csharp&logoColor=white">
 </div> -->
 
 <h3 class="my__title"> 🎯 Goals</h3>
